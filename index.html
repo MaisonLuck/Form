@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de livros</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+  <img src="imagens/icons8-book-shelf-48.png" alt="Livros" id="logo">
+
+  <div class="box">
+    <form action="https://formsubmit.co/maisonfxsantos@hotmail.com" method="post" class="formulario">
+
+      <fieldset>
+        <legend>Cadatre o seu livro aqui!</legend>
+        <br>
+
+        <div class="inputbox">
+          <input type="text" name="nome" id="nome" class="user" required>
+          <label for="nome">Seu Nome:</label>
+        </div>
+        <br><br>
+
+        <div class="inputbox">
+          <input type="text" name="titulo" id="titulo" class="user" required>
+          <label for="titulo">Titúlo do livro:</label>
+        </div>
+        <br><br>
+
+        <div class="inputbox">
+          <input type="text" name="autor" id="autor" class="user" required>
+          <label for="autor">Autor do livro:</label>
+        </div>
+        <br>
+
+        <!-- <p>Categorias</p> -->
+
+        <div id="caixa"> 
+          <label class="col-md-4 control-label">Categorias</label>
+             <div class="container"> 
+            <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+            <select name="genero" class="form-control selectpicker" >
+              <option value=" " >Escolha o gênero do livro</option>
+              <option class="ficcao">Gêneros de ficção</option>
+              <option>Fantasia</option>
+              <option>Ficção científica</option>
+              <option >Ação e aventura</option>
+              <option >Ficção Policial</option>
+              <option >Horror</option>
+              <option >Colorado</option>
+              <option >Thriller e Suspense</option>
+              <option >Ficção histórica</option>
+              <option >Romance</option>
+              <option> Ficção Feminina</option>
+              <option >LGBTQ+</option>
+              <option >Ficção Contemporânea</option>
+              <option >Realismo mágico</option>
+              <option >Graphic Novel</option>
+              <option >Conto</option>
+              <option >Young adult – Jovem adulto</option>
+              <option> New adult – Novo Adulto </option>
+              <option >Infantil</option>
+              <option class="ficcao">Gêneros de não ficção</option>
+              <option>Memórias e autobiografia</option>
+              <option >Biografia</option>
+              <option>Gastronomia</option>
+              <option >Arte e Fotografia</option>
+              <option >Autoajuda</option>
+              <option>Mississippi</option>
+              <option>História</option>
+              <option>Viajem</option>
+              <option>Crimes Reais</option>
+              <option>Humor</option>
+              <option>Ensaios</option>
+              <option>Guias & Como fazer </option>
+              <option>Religião e Espiritualidade</option>
+              <option>Humanidades e Ciências Sociais</option>
+              <option>Paternidade e família</option>
+              <option>Tecnologia e Ciência</option>
+              <option>Infantil</option>
+            </select>
+          </div>
+        </div>
+        </div>
+        
+
+
+
+        <!-- <div class="#">
+          <input type="radio" name="categoria" id="exatas" value="humanas" required>
+          <label for="exatas">Humanas:</label>
+        </div>
+        <br> -->
+
+        <!-- <div class="#">
+          <input type="radio" name="categoria" id="exatas" value="exatas" required>
+          <label for="exatas">Exatas:</label>
+        </div>
+        <br>
+
+        <div class="#">
+          <input type="radio" name="categoria" id="saude" value="saude" required>
+          <label for="saude">Saúde:</label>
+        </div>
+        <br>
+
+        <div class="#">
+          <input type="radio" name="categoria" id="ti" value="ti" required>
+          <label for="ti">TI:</label>
+        </div>
+        <br><br> -->
+        <br><br><br>
+
+        <div class="inputbox">
+          <input type="tel" name="tel" id="telefone" class="user" required>
+          <label for="telefone">Telefone:</label>
+        </div>
+        <br><br>
+
+        <div class="inputbox">
+          <input type="email" name="email" id="email" class="user" required>
+          <label for="email">E-mail:</label>
+        </div>
+        <br><br>
+
+        <div class="inputbox">
+          <input type="text" name="editora" id="editora" class="user" required>
+          <label for="editora">Editora:</label>
+        </div>
+        <br><br>
+
+        <div class="inputbox">
+          <label for="data">Ano de Publicação:</label>
+          <br><br>
+          <input type="date" name="ano_publi" id="ano_pl" class="user" required>
+
+        </div>
+        <br><br>
+
+        <div class="descricao">
+          <label for="descricao">Descrição</label>
+          <textarea name="descricao" id="discricao" maxlength="500"></textarea>
+        </div>
+        <br><br>
+
+        <input type="submit" value="enviar" name="submit" id="submit">
+
+
+
+      </fieldset>
+
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+
+      <input type="hidden" name="_template" value="table">
+
+    </form>
+
+
+  </div>
+
+</body>
+
+</html>
